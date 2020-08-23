@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Ignite Me</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <link href='https://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
@@ -29,32 +29,47 @@ div.quote {
   bottom: 0;
   width: 100%;
   height: 6.5rem;            /* Footer height */
+  background:#f4f4f4;
 }
 
+
 </STYLE>
-
-
-
+<div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h4 class="text-white">About</h4>
+      <span class="text-muted">Ignite Me is an A.I. based Quote Generator. It bring to you Famous Quotes from Famous Personalities based on your Mood.
+      If you want dark quotes, click on Moon, and if you want Bright quotes, click on Sun OR simply swipe left and right based on your choice.</span>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</div>
+<div id="fullpage">
 <BODY  bgcolor="#fef4e2">
 	<!-- https://www.w3schools.com/w3css/tryw3css_templates_travel2.htm# -->
-	<img src="https://manuelamunategui.pythonanywhere.com/pixel2.gif?page=www.motv.io" style="width: 1px; height: 1px" />
 
 
 
 	<!-- Navigation Bar -->
 	<div class="w3-bar w3-border-bottom w3-xlarge w3-center"
-				style="width:100%; background-color:#406b86;">
+				style="width:100%; background-color:#0000ff;">
 
-	 <a href='https://www.viralml.com' targer='_blank'>
-	     <img src='static/images/header-inspire-me.png' style="height:100px" />
+	 <a href='#' targer='_blank'>
+	     <img src='static/images/inspire-header-me.png' style="height:100px" />
 	  			</a>
 	</div>
 
 	<div id="quote" class="quote">
+	    <BR>
 		<div class="Merienda_One">
 			{{quote}}<BR><BR><BR>― {{author}}
 		</div>
 	</div>
+</div>
 
 
 <footer class="w3-container w3-center w3-margin-bottom"  id="footer" >
@@ -70,6 +85,10 @@ div.quote {
 		</form>
 	</div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
 <SCRIPT type="text/javascript">
 
@@ -123,7 +142,9 @@ div.quote {
     }
 
     //USAGE:
-    var el = document.getElementById('quote');
+
+
+    var el = document.getElementById('fullpage');
     swipedetect(el, function(swipedir){
         // swipedir contains either "none", "left", "right", "top", or "down"
         if (swipedir == "right") {
@@ -146,7 +167,6 @@ div.quote {
     });
 
 </SCRIPT>
-
 </BODY>
 
 
